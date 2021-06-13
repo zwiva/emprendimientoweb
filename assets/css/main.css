@@ -1,0 +1,65 @@
+/* Reset*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 7fr 7fr 2fr;
+  grid-template-areas: "navbar" "main" "articles" "presentation" "footer";
+}
+.container .navbar {
+  grid-area: navbar;
+  background-color: #872346;
+}
+.container .main {
+  grid-area: main;
+  background-color: #cc7895;
+}
+.container .articles {
+  grid-area: articles;
+  background-color: #842387;
+}
+.container .presentation {
+  grid-area: presentation;
+  background-color: #462387;
+}
+.container .footer {
+  grid-area: footer;
+  background-color: #872346;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 7fr 2fr;
+    grid-template-areas: "navbar navbar" "main main" "articles presentation" "footer footer";
+  }
+}
+@media (min-width: 768px) {
+  .navbar__item, .navbar__item--fixed {
+    display: flex;
+    color: #0c0910;
+    margin: 0 0.5em;
+  }
+}
+.button--primary {
+  color: #060606;
+  border-radius: 2px;
+  background-color: #FFA500;
+}
+.button--primary:hover {
+  background-color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */

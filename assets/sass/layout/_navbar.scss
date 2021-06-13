@@ -1,0 +1,15 @@
+.navbar {
+  // background-color: #872346;
+}
+
+@include respond-to("md") {
+  .navbar {
+    &__item,
+    &__item--fixed {
+      display: flex;
+      color: $darkblack;
+      // font-size: medium;
+      margin: 0 0.5em;
+    }
+  }
+}

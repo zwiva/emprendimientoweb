@@ -1,0 +1,13 @@
+.main {
+  // background-color: #cc7895;
+}
+
+@include respond-to("md") {
+  .main {
+  }
+}
+
+@include respond-to("xl") {
+  .main {
+  }
+}
