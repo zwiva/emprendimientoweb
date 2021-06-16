@@ -1,0 +1,31 @@
+.article {
+  border: 1px solid $darkblack;
+  padding: 1.3em;
+  margin: 0.25em;
+  
+  &__item {
+    border: 1px solid gray;
+    margin: 0.5em 0;
+    padding: 0.5em;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__content {
+    text-align: justify;
+    line-height: 2;
+  }
+  &__detail {
+    margin: 0;
+    font-size: $large;
+    font-weight: $almost-bold;
+  }
+  &__sharing {
+    display: flex;
+  }
+  &__sharing-text {
+    padding: 0.5em 1em 0 0.25em;
+    margin: 0;
+  }
+}

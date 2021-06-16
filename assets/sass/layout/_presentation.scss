@@ -1,3 +1,22 @@
 .presentation {
-  // background-color: #462387;
+  border: 1px solid $darkblack;
+  padding: 1em;
+  margin: 0.25em;
+  &__header {
+    text-align: center;
+  }
+
+  &__share {
+    display: flex;
+  }
+  &__image {
+    width: 20vh;
+    
+  }
+  &__image--rounded {
+    width: 20vh;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin-bottom: 0.8em;
+  }
 }

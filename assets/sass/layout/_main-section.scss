@@ -1,5 +1,9 @@
 .main {
-  // background-color: #cc7895;
+  text-align: center;
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @include respond-to("md") {

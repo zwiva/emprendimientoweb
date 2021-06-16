@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/36950a24e5.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>Emprendimiento2021</title>
 </head>
@@ -17,36 +18,112 @@
 
     <nav class="navbar">
       <!-- logo -->
-      <!-- <div class="icon"> -->
-      <!-- <img src="" alt=""> -->
-      <!-- </div> -->
+      <div class="navbar__icon">
+        <img src="assets/img/logo.svg" class="navbar__image" alt="">
+      </div>
       <!-- menu -->
-      <!-- <div class="menu">
-    </div> -->
+      <div class="navbar__menu">
+        <div class="navbar__menu-icon">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <ul class="navbar__list">
+          <li class="navbar__item">Acerca de</li>
+          <li class="navbar__item">Cursos</li>
+          <li class="navbar__item">Precios</li>
+        </ul>
+      </div>
     </nav>
+
     <main class="main">
       <!-- image -->
-      <!-- <img src="assets/img/desarrolloweb2021t.svg" alt=""> -->
+      <img src="assets/img/desarrolloweb2021t.svg" class="main__image" alt="">
     </main>
-    <section class="articles">
+
+    <section class="article">
       <!-- articulo 1 -->
-      <!-- <article class="article1st"> -->
-      <!-- <img src="assets/img/html-y-cssb-.jpg" alt=""> -->
-      <!-- </article> -->
+      <div class="article__item">
+        <img src="assets/img/html-y-cssb-.jpg" class="article__image" alt="">
+        <h2>HTML y CSS para principiantes.</h2>
+        <p class="article__content">HTML y CSS son dos herramientas importantes para dar inicio en el mundo del
+          desarrollo web. Por lo tanto, en este curso aprenderas todo sobre HTML y CSS, desde lo mas basico hasta un
+          nivel intermedio, logrando desarrollar tu primera pagina web responsiva, sin la necesidad de aplicar librerias
+          externas para CSS.</p>
+        <p class="article__detail">Instructor: Algun Sujeto</p>
+        <div class="article__sharing">
+          <p><i class="far fa-thumbs-up"></i><span class="article__sharing-text">1</span></p>
+          <p><i class="far fa-comments"></i><span class="article__sharing-text">9</span></p>
+          <p><i class="far fa-eye"></i><span class="article__sharing-text">9</span></p>
+          <p><i class="fas fa-share-alt"></i><span class="article__sharing-text">0</span></p>
+        </div>
+      </div>
       <!-- articulo 2 -->
-      <!-- <article class="article2nd">
-      <img src="assets/img/sass.png" alt="">
-    </article> -->
+      <div class="article__item">
+        <img src="assets/img/sass.png" class="article__image" alt="">
+        <h2>Estilos con SASS.</h2>
+        <p class="article__content">SASS es una herramienta importante hoy en dia para todo desarrollador web, ya
+          que permite crear estilos mas ordenados, eficientes y con menos lineas de codigo. Por ello, en este curso
+          aprenderas todo lo necesario para crear hojas de estilos desde la sintaxis de SCSS, implementando tecnicas
+          propias de SASS. </p>
+        <p class="article__detail">Instructor: Algun Sujeto</p>
+        <div class="article__sharing">
+          <p><i class="far fa-thumbs-up"></i><span class="article__sharing-text">1</span></p>
+          <p><i class="far fa-comments"></i><span class="article__sharing-text">9</span></p>
+          <p><i class="far fa-eye"></i><span class="article__sharing-text">8</span></p>
+          <p><i class="fas fa-share-alt"></i><span class="article__sharing-text">5</span></p>
+        </div>
+      </div>
     </section>
+
     <section class="presentation">
-      <!-- <article class="presentation">
-      <img src="assets/img/web.svg" alt="">
-      <img src="assets/img/web-development.png" alt="">
-    </article> -->
+      <div class="presentation__header">
+        <img src="assets/img/web-development.png" class="presentation__image--rounded" alt="">
+        <h3>CURSOS 2021 LTDA</h3>
+      </div>
+      <div class="presentation__content">
+        <div class="presentation__share">
+          <i>f</i>
+          <i>t</i>
+          <i>g</i>
+        </div>
+        <p>Cursos 2021 Ltda, es una empresa especialista en capacitaciones de personal en Desarrollo Web. Partiendo
+          desde lo mas basico de HTML y CSS, hasta lo mas complejo con SASS y JavaScript, igualmente se ofrecen cursos
+          mas especializados para el BackEnd, implementacion de frameworks para el Frontend, entre otros.</p>
+      </div>
+      <div class="presentation__detail">
+        <p class="presentation__title">Más cursos</p>
+        <ul class="presentation__list">
+          <li><a href="#">Analitica Web (3)</a></li>
+          <li><a href="#">Diseño Web (4)</a></li>
+          <li><a href="#">Desarrollo BackEnd (9)</a></li>
+          <li><a href="#">Seguridad informatica (14)</a></li>
+          <li><a href="#">Social media (7)</a></li>
+          <li><a href="#">SEO (8)</a></li>
+          <li><a href="#">UI/UX (3)</a></li>
+          <li><a href="#">JavaScript (5)</a></li>
+          <li><a href="#">VueJS (1)</a></li>
+        </ul>
+      </div>
+      <!-- <svg></svg> -->
+      <!-- <img src="assets/img/gitAnimacion.gif" class="presentation__image" alt=""> -->
     </section>
     <footer class="footer">
       <!-- texto 1 -->
-      <!-- <p> 2021...</p> -->
+      <div class="footer__header">
+        <p class="footer__header-item">© 2021 | Todos los derechos reservados.</p>
+      </div>
+
+      <div class="footer__content">
+        <div class="footer__info">
+          <p class="footer__info-item">Legal</p>
+          <p class="footer__info-item">Sobre anuncios</p>
+        </div>
+        <div class="footer__interaction">
+          <div class="footer__input">
+            <input type="text" name="" id="" placeholder="e-mail" class="">
+          </div>
+          <button class="button--primary">Enviar</button>
+        </div>
+      </div>
       <!-- input -->
     </footer>
   </div>

@@ -4,27 +4,22 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr 7fr 7fr 2fr;
+  grid-template-rows: 1.5fr 5fr 7fr 7fr 1fr;
   grid-template-areas: "navbar" "main" "articles" "presentation" "footer";
   .navbar {
     grid-area: navbar;
-    background-color: #872346;
   }
   .main {
     grid-area: main;
-    background-color: #cc7895;
   }
   .articles {
     grid-area: articles;
-    background-color: #842387;
   }
   .presentation {
     grid-area: presentation;
-    background-color: #462387;
   }
   .footer {
     grid-area: footer;
-    background-color: #872346;
   }
 }
 

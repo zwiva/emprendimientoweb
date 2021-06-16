@@ -1,7 +1,54 @@
 .footer {
-  // background-color: #872346;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas: "footer__header" "footer__content";
+  background-color: $darkblack;
+  color: $clearwhite;
+  padding: 1.5em;
+  text-align: center;
+  
+  &__header {
+    grid-area: footer__header;
+  }
+  
+  &__content {
+    grid-area: footer__content;
+  }
 }
+
+.footer__content {
+  // text-align: center;
+  // display: flex;
+  // flex-direction: column;
+}
+.footer__header-item,
+.footer__content-item {
+  // margin: 0 auto;
+  // padding: 0.5em;
+  // font-weight: $semi-bold;
+}
+
 @include respond-to("md") {
   .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer__header footer__content";
+  }
+  .footer__info {
+    display: flex;
+  }
+
+  .footer__info-item {
+    padding: 0 1em;
+  }
+  .footer__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .footer__interaction {
+    display: flex;
   }
 }

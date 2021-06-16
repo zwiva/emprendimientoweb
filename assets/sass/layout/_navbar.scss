@@ -1,13 +1,40 @@
 .navbar {
-  // background-color: #872346;
+  display: flex;
+  justify-content: space-between;
+  background-color: $darkblack;
+  color: $clearwhite;
+  padding: 0.5em 1.2em;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+  &__image {
+    height: 7vh;
+  }
+  &__list {
+    display: none;
+  }
+  &__item {
+    display: none;
+  }
 }
 
-@include respond-to("md") {
+@include respond-to("sm") {
   .navbar {
+    &__menu-icon {
+      display: none;
+    }
+    &__list {
+      display: flex;
+    }
+    &__item {
+      display: flex;
+    }
+
     &__item,
     &__item--fixed {
       display: flex;
-      color: $darkblack;
       // font-size: medium;
       margin: 0 0.5em;
     }
