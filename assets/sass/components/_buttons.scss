@@ -1,19 +1,14 @@
-
-.footer__button {
-  // padding: 0.5em;
-  // margin: 0.5em;
-  // width: 40%;
-}
 .button--primary {
-  color: $sable;
-  border-radius: 2px;
+  font-family: $poppins;
+  font-size: $medium;
+  color: $charcoal;
+  height: 2.2em;
+  border-radius: 7px;
+  border: 2px solid gray;
   background-color: $orange;
+  margin-left: 0.25em;
+  margin-top: 0.25em;
   &:hover {
     background-color: $clearwhite;
   }
 }
-// .button--secondary {
-//   color: $bg-white;
-//   border-radius: 0;
-//   background-color: $salmon;
-// }

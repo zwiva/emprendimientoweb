@@ -8,10 +8,9 @@
 
 @include respond-to("md") {
   .main {
-  }
-}
-
-@include respond-to("xl") {
-  .main {
+    &__image {
+      max-width: 50%;
+      height: auto;
+    }
   }
 }

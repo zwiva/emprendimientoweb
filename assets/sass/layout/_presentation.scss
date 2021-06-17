@@ -2,21 +2,110 @@
   border: 1px solid $darkblack;
   padding: 1em;
   margin: 0.25em;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  .fab {
+    padding-right: 1em;
+  }
   &__header {
     text-align: center;
   }
-
   &__share {
     display: flex;
+    justify-content: center;
   }
   &__image {
     width: 20vh;
-    
   }
   &__image--rounded {
     width: 20vh;
     border-radius: 50%;
     border: 2px solid gray;
     margin-bottom: 0.8em;
+  }
+  &__text {
+    @include justify-text;
+  }
+  &__title {
+    font-family: $poppins;
+    text-align: center;
+    background-color: #4b4b4b;
+    color: $clearwhite;
+    font-weight: 600;
+  }
+  &__list {
+    font-family: $poppins;
+    list-style-type: circle;
+    line-height: 1.5;
+    padding-left: 1.3em;
+  }
+  &__item {
+    text-decoration: none;
+    color: purple;
+  }
+  &__decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__decorator-img {
+    width: 80%;
+  }
+}
+
+@include respond-to("sm") {
+  .presentation {
+    &__decorator-img {
+      width: 50%;
+    }
+  }
+}
+
+@include respond-to("md") {
+  .presentation {
+    &__decorator-img {
+      width: 25%;
+    }
+  }
+}
+
+.presentation__groupchevron--move-x {
+  animation: movex 3s linear 0s infinite;
+  // animation: name duration timing-function delay iteration-count direction fill-mode;
+  // animation-name: movex;
+  // animation-duration: 3s;
+  // animation-timing-function: linear; | ease | ease-in | ease-out | ease-in-out | linear (funciones!!!!)
+  // animation-delay: 0s;
+  // animation-iteration-count: infinite;
+}
+
+@keyframes movex {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(145px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.presentation__groupgear--rotating path {
+  animation: rotating 3s linear 0s infinite;
+  transform-origin: 80% 80%;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

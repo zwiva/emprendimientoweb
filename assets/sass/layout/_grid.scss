@@ -1,10 +1,10 @@
 //mobile
-
 .container {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: 1.5fr 5fr 7fr 7fr 1fr;
+  gap: 1em;
   grid-template-areas: "navbar" "main" "articles" "presentation" "footer";
   .navbar {
     grid-area: navbar;

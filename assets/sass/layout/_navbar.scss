@@ -1,16 +1,29 @@
 .navbar {
+  font-family: $poppins;
+  font-weight: $almost-bold;
   display: flex;
   justify-content: space-between;
   background-color: $darkblack;
   color: $clearwhite;
   padding: 0.5em 1.2em;
-
-  &__menu {
+  &__icon {
     display: flex;
     align-items: center;
   }
+  &__menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__menu-icon {
+    position: relative;
+    list-style-type: none;
+    margin-left: auto;
+    justify-content: flex-end;
+    padding: 1em;
+  }
   &__image {
-    height: 7vh;
+    height: 3.5vh;
   }
   &__list {
     display: none;
@@ -19,24 +32,58 @@
     display: none;
   }
 }
+label {
+  cursor: pointer;
+}
 
-@include respond-to("sm") {
+#menu-toggle {
+  display: none;
+}
+
+#trickMenu {
+  text-align: end;
+  background-color: $darkblack;
+}
+
+#trickMenu li {
+  display: block;
+  color: $clearwhite;
+  list-style-type: none;
+  background-color: $darkblack;
+}
+
+#menu-toggle:checked + #trickMenu {
+  display: block;
+}
+
+@include respond-to("md") {
   .navbar {
+    padding: 0 1.2em;
     &__menu-icon {
       display: none;
     }
+    &__image {
+      height: 4vh;
+    }
     &__list {
       display: flex;
+      list-style-type: none;
+      margin-right: auto;
+      justify-content: flex-end;
+      padding-right: 3em;
+      align-items: baseline;
     }
     &__item {
-      display: flex;
-    }
-
-    &__item,
-    &__item--fixed {
-      display: flex;
-      // font-size: medium;
       margin: 0 0.5em;
+      height: 1.5vh;
     }
+  }
+  #trickMenu li {
+    color: $clearwhite;
+    list-style-type: none;
+    background-color: $darkblack;
+  }
+  #menu-toggle {
+    display: none;
   }
 }
